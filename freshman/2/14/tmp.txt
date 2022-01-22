@@ -1,3 +1,0 @@
-長い文字列(空白を含まない)を入力してください: 置換元の単語を入力してください: 置換先の単語を入力してください: 元の文字列：hyogokobeokamoto
-kobe を _KOBE_CITY_ に置換
-置換後の文字列:hyogo_KOBE_CITY_okamoto

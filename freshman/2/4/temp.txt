@@ -1,4 +1,0 @@
-input score ( 0 <= score <=100 ): your input number ==> -96
-input score ( 0 <= score <=100 ): your input number ==> 458
-input score ( 0 <= score <=100 ): your input number ==> 97
-goukaku
