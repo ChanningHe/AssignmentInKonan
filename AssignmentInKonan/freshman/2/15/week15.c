@@ -10,7 +10,7 @@
    の出力を書かないこと */
 
 void compress(char *dna);
-int cont_str(char *c);
+int cont_str(char *c);//Calculation the length of string
 
 
 /* メイン関数．書き換えないこと */
@@ -33,22 +33,23 @@ int main(){
 
 
 void compress(char *dna){
-  int flag = 0;
-  int strlen = cont_str(dna);
+  int flag = 0;//処理しているところ
+  int strlen = cont_str(dna);//文字列の長さを計算する
 
   while(flag < strlen){
     int counter = 1, needCompress = 0;
-    int flagt = flag;
+    int flagt = flag;//tmp flag
 
-    while(dna[flagt] == dna[flagt+1]){
+    while(dna[flagt] == dna[flagt+1]){//連続する同⼀の⽂字の回数を計算する。
       counter++;
       flagt++;
       needCompress = 1;
     }
 
-    if(needCompress == 1){
-      dna[flag+1] = counter + '0';
-      for(int i = flagt+1; i < strlen; i++){
+    if(needCompress == 1){//NeedCompress?
+      dna[flag+1] = counter + '0';//連続する回数を書き込む
+      
+      for(int i = flagt+1; i < strlen; i++){//前に移動する
           dna[i-counter+2]=dna[i];
       }
       strlen=strlen-counter+2;
