@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main(){
+    char *weeks[7]={"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"};
+    int arrayM[13]={6,2,2,5,7,3,5,1,4,6,2,4};
+    int day,mouth,week;
+    int firstday;
+    
+    printf("月を入力してください\n");    
+    scanf("%d",&mouth);
+    printf("日を入力してください\n");    
+    scanf("%d",&day);
+
+    firstday=arrayM[mouth];
+
+    printf("2022年%d月%d日の曜日は「%s」です。\n",mouth,day,weeks[((day-firstday+1)%7)+2]);
+
+    return 0;
+}月を入力してください
+日を入力してください
+2022年4月8日の曜日は「Friday」です。
