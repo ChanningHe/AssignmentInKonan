@@ -1,1 +1,1 @@
-# AssignmentInKonan
+# MyAssignmentInKonanUniversity
