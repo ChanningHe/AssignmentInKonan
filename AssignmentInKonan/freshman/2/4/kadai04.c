@@ -17,3 +17,5 @@ int main(void){
             printf("fugoukaku\n");
     }
 }
+
+//test
