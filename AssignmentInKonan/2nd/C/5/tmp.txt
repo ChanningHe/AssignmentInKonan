@@ -1,0 +1,3 @@
+result :
+MAX_NUM_IN_ARY:99
+MIN_NUM_IN_ARY:1

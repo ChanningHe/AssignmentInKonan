@@ -5,6 +5,8 @@
         "random": "c",
         "limits": "c",
         "valarray": "c",
-        "list": "c"
+        "list": "c",
+        "stdio.h": "c",
+        "find_ans_ary.h": "c"
     }
 }
