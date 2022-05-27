@@ -7,6 +7,7 @@
         "valarray": "c",
         "list": "c",
         "stdio.h": "c",
-        "find_ans_ary.h": "c"
+        "find_ans_ary.h": "c",
+        "stdlib.h": "c"
     }
 }
