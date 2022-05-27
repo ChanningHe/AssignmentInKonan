@@ -28,24 +28,24 @@ unsigned int biClrImportant; /* カラーパレットのうち重要な色の数
 
 int main(){
     FILE *bitfile = fopen("test.bmp",r);
-    if(fp == NULL) { 
+    if(bitfile == NULL) { 
         printf("ファイルをオープンできませんでした。¥n");
         return 1;
     }
     struct BITMAPFILEHEADER bfh;
     struct BITMAPINFOHEADER bih;
-
-    fget(bfh.bfType,2,bitfile);
-    fget(bfh.bfSize,4,bitfile);
-    fget(bfh.bfReserved1,2,bitfile);
-    fget(bfh.bfReserved2,2,bitfile);
-    fget(bfh.bfOffBits,4,bitfile);
-    fget(bih.biSize,4,bitfile);
-    fget(bih.biWidth,4,bitfile);
+    
+    fgets(bfh.bfType,2,bitfile);
+    fgets(bfh.bfSize,4,bitfile);
+    fgets(bfh.bfReserved1,2,bitfile);
+    fgets(bfh.bfReserved2,2,bitfile);
+    fgets(bfh.bfOffBits,4,bitfile);
+    fgets(bih.biSize,4,bitfile);
+    fgets(bih.biWidth,4,bitfile);
 
     printf("画像の幅：%d\n",bfh.bfSize);
     printf("ファイルサイズ：%d\n",bih.biWidth);
-    
+
     fclose(bitfile);
 
     return 0;
