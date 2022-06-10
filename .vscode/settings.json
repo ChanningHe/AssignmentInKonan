@@ -8,6 +8,7 @@
         "list": "c",
         "stdio.h": "c",
         "find_ans_ary.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "typeinfo": "c"
     }
 }
