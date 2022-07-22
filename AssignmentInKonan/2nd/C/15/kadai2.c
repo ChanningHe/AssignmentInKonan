@@ -21,11 +21,8 @@ int main(){
         calc(&m_list[i]);
         printf("Name:%s Tall:%.1lf Weiht:%.1lf BMI:%.2lf\n",m_list[i].name,m_list[i].ht,m_list[i].wt,m_list[i].bmi);
     }
-
-
     return 0;
 }
-
 
 void calc(member *m){
     m->bmi = m->wt/(m->ht*m->ht);
