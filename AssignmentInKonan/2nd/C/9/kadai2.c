@@ -31,7 +31,6 @@ int main(){
     printf("-- 追加後\n");
     for(int i=0; i<6; i++){
         printf("[%s] S:%d Temp: %f\n",pf[i].name,pf[i].area,pf[i].temp);
-
     }
     return 0;
 }

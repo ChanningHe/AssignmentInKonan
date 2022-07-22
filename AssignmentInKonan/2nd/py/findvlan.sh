@@ -9,10 +9,10 @@ function checknetwork()
     local ret_code=`curl -I -s --connect-timeout ${timeout} ${target} -w %{http_code} | tail -n1`
 
     if [ "x$ret_code" = "x200" ]; then
-        #网络畅通
+        
         return 1
     else
-        #网络不畅通
+        #cant access internet
         return 0
     fi
 
@@ -30,7 +30,7 @@ do
     checknetwork
     if [ $? -eq 0 ];then
         echo "checking vlan $i"
-        echo "网络不畅通，请检查网络设置！"
+        echo "cant access internet！"
         #exit -1
     else
     #cat $i > ./valn.txt

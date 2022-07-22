@@ -1,0 +1,2 @@
+yellow count point is:112001/1000000
+s:0.11200100
